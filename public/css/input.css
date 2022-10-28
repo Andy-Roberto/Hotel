@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    html{
+        height: 100%;
+    }
+    body{
+        min-height:100%;
+    }
+    .estilo{
+        @apply items-center py-2;
+      }
+    .box_{
+        @apply 2xl:h-36 2xl:w-48 xl:h-32 xl:w-40 md:h-32 md:w-40 rounded bg-[#DFF8EB];
+    }
+    .navbar{
+        grid-area:navbar;
+      }
+      .main{
+        grid-area:main;
+      }
+      .aside{
+        grid-area:aside;
+      }
+      .grid_container > * {
+        /* box-shadow: -1px 1px 7px 0px rgba(0,0,0,.75);
+        border-radius: 4px;
+        padding: 2px; */
+        text-align: center;
+      
+      }
+      .grid_container{
+        @apply grid;
+        grid-template-rows: 60px auto;
+        grid-template-columns: 225px auto;
+        grid-template-areas:
+        "navbar navbar"
+        "aside main"
+        ;
+        
+      }
+      aside a div{
+        display: block;
+        text-align:left;
+        color: white;
+      }
+      aside a{
+        padding: .25rem;
+        height: 2.5rem;
+        
+        @apply  transition ease-in-out  delay-300 text-lg  hover:text-xl duration-700 ;
+      }
+      
+
+    
+}

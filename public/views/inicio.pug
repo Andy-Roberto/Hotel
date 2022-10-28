@@ -1,0 +1,54 @@
+extends plantilla 
+block layout 
+    nav(class="flex  pl-6 navbar items-center space-x-8 bg-[#ffffff]") 
+            p(class="text-2xl") Hotel NH 
+            p(class="") texto 4
+            p(class="") textos ss3234
+    aside(class="aside  bg-[#000000]")
+        a(class="flex items-center" href="") 
+            div(class=" pt-0 pb-0   " ) Inicio 
+            
+        a(class="flex items-center " href="")
+            div Reserva 
+        a(class="flex items-center " href="")
+            div(href="") Recepción 
+        a(class="flex items-center " href="") 
+            div(href="") Punto de Venta 
+        a(class="flex items-center " href="") 
+            div(href="") Verificacion de Salidas
+        a(class="flex items-center " href="") 
+            div(href="") Habitaciones 
+        a(class="flex items-center " href="")
+            div(href="") Reportes 
+        a(class="flex items-center " href="")
+            div(href="") Clientes 
+        a(class="flex items-center " href="")
+            div(href="") Usuarios 
+        a(class="flex items-center " href="") 
+            div(href="") Configuración
+    main(class="main flex justify-center  bg-[#104F55]")
+            div(class="pt-16 grid md:grid-cols-4 2xl:grid-cols-7 xl:grid-cols-5 gap-x-4 gap-y-4 grid-cols-7")
+                each val,i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,1,1,4,1,2,3,4,5,6,7]
+                    div(class="box_ lg ") #{val}  #{i} 
+
+
+
+
+
+
+//-div(class=" w-11/12 pt-20 grid-flow-row auto-rows-max bg-slate-50  gap-y-8 grid md:grid-cols-4 2xl:grid-cols-7 xl:grid-cols-5")
+//- extends plantilla 
+//- block layout 
+//-     nav(class="flex items-center space-x-4 text-white  flex-row uno h-20 w-full color_1") 
+//-             p(class="text-3xl") Hotel NH 
+//-             p(class="") texto 
+//-             p(class="") textos ss323
+//-     aside(class="items-center color_1 h-full w-40 flex flex-col")
+//-             - var estilo= "estilo"
+//-             each val in [["uno",'dos'],["segundo"]]
+//-                 a(class=estilo href="/recepsion")  #{ (val.length>1)?val[0]+""+val[1]:val}
+//-     section(class="w-full h blanco_2 ") 
+//-         //- div(class="mt-20  bg-slate-50 ml-20 gap-y-8 grid grid-cols-6")
+//-         //-     each val,i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
+//-         //-         div(class="box_") #{val}  #{i} 
+            
